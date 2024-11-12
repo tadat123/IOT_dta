@@ -1,0 +1,140 @@
+.container {
+  width: 40%; /* Increased width */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Increased gap */
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Increased gap */
+}
+.head > img {
+  width: 3rem; /* Increased size */
+}
+.stat {
+  padding: 1rem; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Increased gap */
+  color: var(--grey);
+}
+.stat > :nth-child(1) {
+  font-size: 1.2rem; /* Increased font size */
+}
+.stat > :nth-child(2) {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 500;
+  color: white;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem; /* Increased gap */
+}
+.order>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--grey);
+    font-size: 1rem; /* Increased font size */
+}
+
+.order>:nth-child(1)
+{
+    margin-bottom: 1rem; /* Increased margin */
+}
+.order>:nth-child(1)>:nth-child(1)
+{
+    font-size: 1.2rem; /* Increased font size */
+}
+.order>:nth-child(1)>:nth-child(2)
+{
+    font-size: 1rem; /* Increased font size */
+    color: var(--green);
+}
+.orderChart{
+    width: 100%;
+}
+.orderChart>:nth-child(1)
+{
+    text-align: center;
+}
+
+/* Add this to Orders.module.css */
+.orderHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Increased gap */
+}
+
+.icon {
+    color: #f39c12;
+    font-size: 2rem; /* Increased icon size */
+}
+
+.glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        color: #f39c12;
+    }
+    to {
+        color: #fff700;
+    }
+}
+
+.blow {
+    animation: blow 1s infinite alternate;
+}
+
+@keyframes blow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px); /* Increased translation */
+    }
+}
+
+.spin {
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Orders.module.css */
+.toggleButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggleButton.off {
+    background-color: gray;
+    color: white;
+}
+
+.toggleButton.on {
+    background-color: blue;
+    color: white;
+}
+
+.toggleButton:hover {
+    background-color: #0056b3;
+}

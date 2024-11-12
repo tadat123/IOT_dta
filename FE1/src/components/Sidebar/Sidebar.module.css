@@ -1,0 +1,83 @@
+.container {
+  height: 100vh;
+  width: 6%;
+  max-width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem;
+  background: rgb(20, 20, 20);
+  transition: width 0.3s ease;
+}
+
+.container.expanded {
+  width: 20%;
+  max-width: 20rem;
+}
+
+.logo {
+  width: 45%;
+  max-width: 5rem;
+  margin-bottom: 2rem; /* Add margin to separate from the expand button */
+}
+
+.expandButton {
+  margin-bottom: 2rem; /* Adjusted margin */
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.expandButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%; /* Ensure menu items take full width */
+  align-items: flex-start; /* Align menu items to the left */
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%; /* Ensure items take full width */
+}
+
+.item > svg {
+  fill: white;
+  width: 3rem;
+}
+
+.itemText {
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}

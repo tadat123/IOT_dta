@@ -1,0 +1,42 @@
+.table-container{
+    padding: 3rem 5rem;
+}
+.table-container>:nth-child(1)
+{
+    border-radius: 10px!important;
+    overflow: hidden!important;;
+}
+.MuiTableRow-root, .MuiTableCell-root{
+    border: none!important;
+}
+
+/* History.css */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.rows-per-page-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#custom-rows-per-page {
+    width: 4rem;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
